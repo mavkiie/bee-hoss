@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Bee HOSS</title>
+    <!--links style sheet with correct path-->
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <!--source file is from the content delivery network: gets the provided code frm some other network, in this case slick-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" ></script>
+    <script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=5oqjtykfhetorjnqyzbcbw" async="true"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Upper bar and the first big header-->
+    <!--commonly names has herosection (just so I don't get confused)-->
+    <!-- <a id="fixed-button" href="#products">Shop Here</a> -->
+    <a id="top"></a>
+    
+    <section id="main-header" class="hero-section">
+        <h4 class="screen-reader-text">Header</h4>
+        <!--nav container for the navigation bar on the top-->
+        <nav>
+            <img id="brand-logo-one" src="assets/svg/black-beehoss-logo.svg" alt="Bee HOSS logo"> 
+            <!--navigation bar sections-->
+            <ul class="nav-container">
+                <li><a id="nav-bar-section-one" href="#about">Our Story</a></li>
+                <li><a id ="nav-bar-section-two" href="#ingredients">Ingredients</a></li>
+                <li><a id="nav-bar-section-three" href="#products">Shop</a></li>
+                <li><a id="nav-bar-section-four" href="#contact" >Contact</a></li>
+                <li>
+                    <a class="nav-bar-section-five" href="https://www.beehoss.com/shop">
+                        <svg class="cart-logo" viewBox="0 0 40 38" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.3517 25.3075H13.4862C13.0887 25.3075 12.7217 25.4776 12.4465 25.7404C12.1866 
+                            26.0187 12.0184 26.3742 12.0184 26.7917C12.0184 27.2091 12.1866 27.5646 12.4465 27.8275C12.7064 28.1057 
+                            13.0734 28.2603 13.4862 28.2603H34.7554C35.2447 28.2603 35.6422 28.6623 35.6422 29.157C35.6422 29.6517 
+                            35.2447 30.0537 34.7554 30.0537H13.4862C12.5994 30.0537 11.789 29.6826 11.1927 29.0952C10.6116 28.5077 
+                            10.2447 27.6883 10.2447 26.7917C10.2447 25.895 10.6116 25.0756 11.1927 24.4882C11.3762 24.3026 11.5902 
+                            24.1326 11.8043 23.9934C11.6208 23.6533 11.4832 23.2668 11.4067 22.8649L9.29664 11.4247L7.82875 3.49385C7.76759 
+                            3.18466 7.64527 2.89092 7.46178 2.72087C7.33946 2.59719 7.18655 2.51989 7.00306 2.51989H1.59022C1.10092 2.51989 
+                            0.703369 2.11794 0.703369 1.62323C0.703369 1.12852 1.10092 0.726562 1.59022 0.726562H7.01835C7.72172 0.726562 8.28747 
+                            1.00484 8.73089 1.43771C9.17432 1.88604 9.46484 2.50443 9.57187 3.1692L10.5199 8.28637C10.5199 8.28637 10.5658 8.28637 
+                            10.5963 8.28637H38.0122C38.0122 8.28637 38.1651 8.28637 38.2569 8.31729C38.5168 8.36367 38.7615 8.5028 38.945 8.68832C39.159 8.90476
+                            39.3119 9.21395 39.3119 9.53861C39.3119 9.60044 39.3119 9.67774 39.2966 9.75504L36.8807 22.8803C36.7584 23.5451 36.4679 24.1635 36.0245 
+                            24.6118C35.581 25.0602 35.0153 25.3384 34.3119 25.3384H15.367L15.3517 25.3075Z"  stroke-width="0.92" stroke-miterlimit="10"/>
+                            <path d="M31.2691 31.4604C31.6972 31.4604 32.11 31.5532 32.4923 31.7078C32.8746 31.8779 
+                            33.2262 32.1098 33.532 32.4035C33.8226 32.6972 34.0519 33.0528 34.2201 33.4548C34.373 33.8412 34.4648 
+                            34.2587 34.4648 34.6915C34.4648 35.1244 34.373 35.5418 34.2201 35.9283C34.0519 36.3148 33.8226 36.6704 33.532 
+                            36.9796C33.2415 37.2733 32.8898 37.5207 32.4923 37.6753C32.11 37.8299 31.6972 37.9226 31.2691 37.9226C30.8409 37.9226 30.4281 37.8299 
+                            30.0458 37.6753C29.6635 37.5207 29.3119 37.2733 29.0213 36.9796C28.7308 36.6858 28.5015 36.3303 28.3333 35.9283C28.1804 35.5418 28.0886 
+                            35.1244 28.0886 34.6915C28.0886 34.2587 28.1804 33.8412 28.3333 33.4548C28.5015 33.0528 28.7308 32.7127 29.0213 32.4035C29.3119 32.1098 
+                            29.6635 31.8779 30.0611 31.7078C30.4434 31.5532 30.8562 31.4604 31.2843 31.4604H31.2691ZM31.8195 33.362C31.6513 33.2847 31.4678 33.2538 
+                            31.2691 33.2538C31.0703 33.2538 30.8868 33.2847 30.7186 33.362C30.5504 33.4393 30.3822 33.5321 30.2599 33.6712C30.1376 33.8103 30.0305 
+                            33.9649 29.9541 34.135C29.8776 34.305 29.847 34.4906 29.847 34.6915C29.847 34.8925 29.8776 35.078 29.9541 35.2326C30.0305 35.4027 30.1376 
+                            35.5727 30.2599 35.6964C30.3822 35.8356 30.5351 35.9283 30.7186 36.0056C30.8868 36.0829 31.0703 36.1138 31.2691 36.1138C31.4678 36.1138 31.6513 
+                            36.0829 31.8042 36.0056C31.9724 35.9283 32.1406 35.8356 32.2629 35.6964C32.4005 35.5573 32.5076 35.4027 32.5687 35.2326C32.6452 35.0626 32.6758 34.877 
+                            32.6758 34.6761C32.6758 34.4751 32.6452 34.2896 32.5687 34.1195C32.4923 33.9495 32.4005 33.7794 32.2629 33.6557C32.1253 33.5166 31.9724 33.4084 
+                            31.8042 33.3311L31.8195 33.362Z" stroke-width="0.11" stroke-miterlimit="10"/>
+                            <path d="M14.5413 31.4605C14.9694 31.4605 15.3822 31.5533 15.7645 31.7079C16.1468 31.8779 16.4985 32.1098 
+                            16.8043 32.4036C17.0948 32.6973 17.3241 33.0529 17.4923 33.4548C17.6452 33.8413 17.737 34.2587 17.737 34.6916C17.737 
+                            35.1245 17.6452 35.5419 17.4923 35.9284C17.3241 36.3149 17.0948 36.6705 16.8043 36.9796C16.5137 37.2734 16.1621 37.5207 
+                            15.7798 37.6753C15.3975 37.8299 14.9847 37.9227 14.5566 37.9227C14.1284 37.9227 13.7156 37.8299 13.3333 37.6753C12.9511 
+                            37.5207 12.5994 37.2734 12.2936 36.9796C12.003 36.6859 11.7584 36.3303 11.6055 35.9284C11.4373 35.5419 11.3608 35.1245 
+                            11.3608 34.6916C11.3608 34.2587 11.4373 33.8413 11.6055 33.4548C11.7584 33.0529 12.003 32.7128 12.2936 32.4036C12.5841 
+                            32.0944 12.9358 31.8625 13.3333 31.6924C13.7156 31.5378 14.1284 31.4451 14.5566 31.4451L14.5413 31.4605ZM15.0917 33.3621C14.9235 
+                            33.2848 14.74 33.2539 14.5413 33.2539C14.3425 33.2539 14.159 33.2848 13.9908 33.3621C13.8226 33.4394 13.6697 33.5321 13.5321 33.6713C13.3945 
+                            33.8104 13.2874 33.965 13.2263 34.1351C13.1498 34.3051 13.1192 34.4906 13.1192 34.6916C13.1192 34.8926 13.1498 35.0781 13.2263 35.2327C13.3027 
+                            35.4028 13.3945 35.5728 13.5321 35.6965C13.6697 35.8356 13.8226 35.9284 13.9908 36.0057C14.159 36.083 14.3425 36.1139 14.526 36.1139C14.7095 36.1139 
+                            14.9082 36.083 15.0764 36.0057C15.2446 35.9284 15.4128 35.8356 15.5352 35.6965C15.6728 35.5574 15.7645 35.4028 15.841 35.2327C15.9021 35.0626 15.948 34.8771 
+                            15.948 34.6762C15.948 34.4752 15.9174 34.2897 15.841 34.1196C15.7645 33.9495 15.6728 33.7795 15.5352 33.6558C15.3975 33.5167 15.2599 33.4085 15.0764 
+                            33.3312L15.0917 33.3621Z" stroke-width="0.11" stroke-miterlimit="10"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    <!--header-->
+    <div class="header-picture-and-text">
+        <div class="hero-header">
+            <h1 class="hero-header-styling">
+            Connecting<br>
+            Communities
+            <br>Through Flavor
+            </h1>
+        </div>
+        <img class="hero-photo" src="assets/images/header-photo.jpg" alt="Bee HOSS Honey Bottle"> 
+     </div>
+      
+    </section>
+<!--Introduction section with first paragraph-->
+    <section id="about" class="intro">
+        <h4 class="screen-reader-text">Introduction</h4>
+        <img class="yellow-drip-styling" src="assets/svg/yellow-drip-only.svg" alt="">
+        <div class="intro-container">
+            <div class="intro-first-text">
+                <h2>Save the Bees, Savor the Flavor</h2>  
+            </div>
+            <div class="intro-second-text">
+                <p>Bee Hoss is an artisan honey hot sauce that delivers a unique blend of sweet-heat flavors while giving back 
+                to its community. By harvesting real honey from the bees we help protect and sourcing from local 
+                farms we ensure a guarantee of good flavor and good community.</p>
+            </div>
+          <!--create two div sections for the two paragraphs. Use flex to align them and do "max-width" on the section that is smaller-->
+        </div>
+    </section>
+<!--Section with 4 pictures-->
+    <section id="our-story" class="four-pictures-section">
+        <h4 class="screen-reader-text">Our Story</h4>
+        <ul class="four-pictures-container">
+            <!--Here we are using a linear gradient to add a gradient on the bottom of each photo-->
+            <!--We have classes that indicate each separate box (if needed) and then picture-box which is a class that applies to ALL of them-->
+            <li class ="picture-box-1 picture-box" style="background-image:linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.8)), url('assets/images/pepper-image.jpg')">
+                <div class="hover-content">
+                    <h4 class="picture-box-titles">Bee Bold</h4>
+                    <div class="picture-box-text">
+                        <p class="picture-box-text-styling">Our honey hot sauce is made the authentic way with caring hands and deliberate ingredients. Made simply to taste bold.</p>
+                    </div>
+                </div>
+            </li>
+            <li  class="picture-box-2 picture-box"  style="background-image:linear-gradient(rgba(0,0,0,0) 50%, rgba(0, 0, 0, 0.8)), url('assets/images/bee-hive-updated.jpg')">
+                <div class="hover-content">
+                    <h4 class="picture-box-titles">Bee Sweet</h4>
+                    <div class="picture-box-text">
+                        <p class="picture-box-text-styling">Our honey’s sweetness comes naturally straight from the comb. We promise to protect the bees we source by donating 5% of each sale back to the Bee Informed Partnership.</p>
+                    </div>
+                </div>
+            </li>
+            <li  class="picture-box-3 picture-box" style="background-image:linear-gradient(rgba(0,0,0,0) 50%, rgba(0, 0, 0, 0.8)), url('assets/images/farmer-soil.jpg')">
+                <div class="hover-content">
+                    <h4 class="picture-box-titles">Bee Local</h4>
+                    <div class="picture-box-text">
+                        <p class="picture-box-text-styling">We got our start in Baltimore, Maryland, so we make sure to give back by supporting 
+                            local apiaries, farms, businesses, and donating to local bee conservation.</p>
+                    </div>
+                </div>
+            </li>
+            <li  class="picture-box-4 picture-box" style="background-image:linear-gradient(rgba(0,0,0,0) 50%, rgba(0, 0, 0, 0.8)), url('assets/images/red-bottle.png')">
+                <div class="hover-content">
+                    <h4 class="picture-box-titles">Bee Hoss.</h4>
+                    <div class="picture-box-text">
+                        <p class="picture-box-text-styling">Learn more about our story here: <br><a class="picture-box-text-styling" href="https://www.beehoss.com/conservation">Our Mission</a></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    
+        <div class="four-pictures-text">
+            <div class ="four-pictures-header">
+                <h2>Our Story</h2>
+            </div>
+            <div class="four-pictures-paragraph">
+                <p>Alex Crespo brought Bee Hoss to life in 2013. He started out bottling up 
+                    the honey hot sauce as gifts for family and friends before realizing he wanted to take his creation to the next level. 
+                    The story is simple. Alex wanted to create a more flavorful food experience while also helping community businesses and bee conservation. 
+                    Getting a start right in the heart of Baltimore, Maryland, 
+                    it was only natural for him to repay the local community that made this dream possible.</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!--Section with scroll picture-->
+    <section id="ingredients" class="slider-section">
+        <h4 class="screen-reader-text">Ingredients</h4>
+        <div class="slider-grouping-container">
+        <div class="slider-container">
+        <div class="slider"><!--This is the div container that holds the whole slider (with all 4 picturres)-->
+        <div class="slider-box" ><!--Each picture has a div container around it called impact box-->
+            <!-- the div container impactbox text is used-->
+            <div class="slider-box-text" style="background-image:linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.8)), url('assets/images/apex-farm-updated.png')">
+                <p class= "slider-header">Apex bee company Clover honey / wildflower  honey  </p>
+                <p class="slider-body">
+                    Utilizing restoration ecology principles, we promote a holistic and natural
+                    approach to farming, gardening, and beekeeping. 
+                </p>
+            </div>
+        </div>
+    
+        <div class="slider-box" >
+            <div class="slider-box-text" style="background-image:linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.8)), url('assets/images/MoonValley.jpeg')">
+                <p class="slider-header">Moon Valley Farms Habanero / Jalapeno / Cayenne</p>
+                <p class="slider-body">
+                    Moon Valley Farm grows specialty and staple 
+                    vegetables and herbs on 70 acres in Woodsboro, Maryland for a year-round Community-Supported Agriculture program and local businesses.
+                </p>
+            </div>
+        </div>
+        <div class="slider-box" >
+            <div class="slider-box-text" style="background-image:linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.8)), url('assets/images/roots-farm.jpg')">
+                <p class="slider-header">Roots Farm Habanero / Jalapeno / Cayenne</p>
+                <p class="slider-body">
+                    Uniting our community through the cultivation of the earth and stewardship of the land. By extending the benefits we enjoy to others, 
+                    we challenge ourselves to be aware of our environmental and social impact and create a living classroom to stimulate growth and learning.
+
+                </p>
+            </div>
+        </div>
+        <!-- <div class="slider-box" >
+            <div class="slider-box-text" style="background-image:linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.8))">
+                <p class="slider-header">Baltimore Community Foundation</p>
+                <p class="slider-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                donec id erat ac sapien tincidunt auctor.
+                </p>
+            </div>
+        </div> -->
+        </div>
+     </div>
+        <!--position absolute on container for 3 pictures so they don't take up all the room (pictures must be stacked )-->
+    </section>
+     <!--Section with stacked animated photos-->
+    <section id="products" class="animated-photos-section">
+        <h4 class="screen-reader-text">Products</h4>
+        <img class="red-drip-styling" src="assets/svg/drip.svg" alt="">
+        <h4 class="products-header">Products:</h4>
+        <div class="animated-photos-container">
+            <div class="photos-grouping-container">
+                <div class= "picture1 animate-picture" data-desc="description-1">
+                    <img src="assets/images/picture-three-norotate-fixed.png" alt="Bee hoss tote bag"></div>
+                <div class="picture2 animate-picture" data-desc="description-2">
+                    <img src="assets/images/picture-two-norotate.png" alt="Bee hoss Mug">
+                </div>
+                <div class="picture3 animate-picture" data-desc="description-3">
+                    <img src="assets/images/picture-one.png" alt="Bee Hoss Bottle Sauce">
+                </div>
+            </div>
+        <button id="button" class="playpause-btn pause"></button>
+        </div>
+        <div id="products-right-container">
+            <div id="animated-photos-text-container">
+                <div class="animated-photos-description description-1 active">
+                    <div class="animated-photos-header">
+                        <p>Naturally Sweet With Feisty Heat</p>
+                    </div>
+                    <div class="animated-photos-paragraph ">
+                        <p>Honey Hot Sauce (5oz)<br>
+                            $8.99</p>
+                    </div>
+                </div>
+                <div class="animated-photos-description description-2">
+                    <div class="animated-photos-header">
+                        <p>2 Sizes, 1 Sauce, 1 Mission  </p>
+                    </div>
+                    <div class="animated-photos-paragraph">
+                        <p>
+                            Bee Hoss Tote Bag<br>
+                            $15.99   
+                        </p>
+                    </div>
+                </div>
+                <div class="animated-photos-description description-3">
+                    <div class="animated-photos-header">
+                        <p>Bee Hoss, Bee Proud. Rep Our Honey Hot Swag Today</p>
+                    </div>
+                    <div class="animated-photos-paragraph">
+                        <p>
+                            Bee Hoss Mug<br>
+                            $10.99
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="shop-link" href="https://www.beehoss.com/shop">Shop Now</a>
+        </div>
+        
+     </section>
+     <!--Last bottom part (footer)-->
+    <section id="contact" class="footer">
+        <h4 class="screen-reader-text">Contact</h4>
+        <!--main container that holds the left and right container (used to display flex on the containers so they are next to each other)-->
+        <div class="main-footer-container">
+            <!--left container-->
+        <div class="footer-container-left">
+            <div class="footer-news-title">
+                <h3 style="position:relative;padding-bottom:10px">Don’t just take our word for it. See what the hive has to say about our honey hot sensation…</h3>
+            </div>
+            <div id="bottom-slider" class="bottom-slider">
+                <div class="bottom-links">
+                    <div class="footer-links-style">
+                        <p>“I had almost given up on breakfast before 
+                            I started adding Bee Hoss to it. Now it’s my favorite meal of the day.”
+                        </p>
+                    </div>
+                    <p class="news-source-styling">@s_s_dalton on Instagram
+                    </p>
+                </div>
+                <div class="bottom-links">
+                    <div class="footer-links-style">
+                        <p>“My last order from you guys was the best honey I’ve ever had.”</p>
+                    </div>
+                    <p class="news-source-styling">@cbahh on Instagram</p>
+                </div>
+                <div class="bottom-links">
+                    <div class="footer-links-style">
+                        <p>“Perfect blend of sweet and heat for those hot 
+                            summer days out in the desert working in my RV…”</p>
+                    </div>
+                    <p class="news-source-styling">Walt W., Fells Point</p>
+                </div>
+                <div class="bottom-links">
+                    <div class="footer-links-style">
+                        <p>“Couldn’t think of a better hot sauce to add to my eggs, tacos, or pizza as I sit alone writing my heart out…”</p>
+                    </div>
+                    <p class="news-source-styling" >Edgar A.P., Mt. Vernon</p>
+                </div>
+            </div>
+            <!--Created a div that holds the bottom slider controls; used slick's "appendDots" to append the slider's controls to the bottom-slider-controls class-->
+            <div class="bottom-slider-controls" id="bottom-slider-controls">
+                <button type="button" class="playpause-btn pause" data-paused="false" aria-controls="bottom-slider"></button>
+                <!--we nested the playpause btn in the div already and when the dots get appended, it gets stored in this div-->
+            </div> 
+        </div>
+        <!--right container-->
+        <div class="footer-container-right">
+            <a href="#top"><img class="footer-logo" src="assets/images/white-beehoss-logo.png" alt="Bee HOSS logo"></a>
+            <p class="footer-address">6615 Harford RD, Baltimore MD 21214</p>
+            <p class="footer-phone-number">443.219.4370 beehossmd@gmail.com</p>
+            <div class="footer-links">
+                <a class="footer-link-one" href="https://www.facebook.com/beehossmd/"><img src="assets/svg/square-fb-logo.svg" alt="Facebook"></a>
+                <a class= "footer-link-two" href="https://instagram.com/bee_hoss/"><img src="assets/svg/square-insta-logo.svg" alt="Instagram"></a>
+                <a class= "footer-link-three" href="https://x.com/i/flow/login?redirect_after_login=%2Fbee_hoss"><img src="assets/svg/square-twitter-logo.svg" alt="Twitter"></a>
+                <p class="footer-brand-copyright">Never miss out on the buzz! Follow us.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--SCRIPT TAGS (not jquery bc these depend on it)-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
